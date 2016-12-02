@@ -53,14 +53,18 @@ public class LetterFlip{
         if(choice.toLowerCase().equals("flip") || choice.toLowerCase().equals("f")){
             Scanner userInput = new Scanner(System.in);
             System.out.print("Enter Text: ");
+            do{
             String input = userInput.next();
             System.out.println(StringFlip(input));
+            }while(userInput.hasNext());
 
         }else if(choice.toLowerCase().equals("mirror") || choice.toLowerCase().equals("m")){
             Scanner userInput = new Scanner(System.in);
             System.out.print("Enter Text: ");
+            do{
             String input = userInput.next();
             System.out.println(MirrorAndFlip(input));
+            }while(userInput.hasNext());
         }
     }
 }
